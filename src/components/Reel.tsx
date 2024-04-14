@@ -2,10 +2,10 @@
 
 export default function Reel({
   delay = 0,
-  width = 1920,
-  height = 1080,
+  width = 1080,
+  height = 1920,
   poster = "",
-  className,
+  className = "",
   src,
 }: {
   delay?: number;
@@ -26,7 +26,7 @@ export default function Reel({
       controls
       preload="metadata"
     >
-      <source src={src} className="sm:block hidden" type="video/mp4" />
+      <source src={src} className="block sm:block hidden" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   );

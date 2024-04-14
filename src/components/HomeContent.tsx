@@ -62,8 +62,9 @@ export default function HomeContent() {
 
       <div
         id="mylessons"
-        className="grid grid-cols-1
-        sm:grid-cols-2 
+        className="flex flex-col
+        md:grid
+        md:grid-cols-2
         lg:grid-cols-4
         gap-2"
       >
@@ -82,14 +83,14 @@ export default function HomeContent() {
           src="reel5.mp4"
           width={1920}
           poster="/reels/10.jpg"
-          className="col-span-2"
+          className="col-span-1 sm:col-span-2"
           height={1080}
           delay={300}
         />
         <Reel
           src="reel10.mp4"
           width={1920}
-          className="col-span-2"
+          className="col-span-1 sm:col-span-2"
           poster="/reels/9.jpg"
           height={1080}
           delay={600}
